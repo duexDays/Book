@@ -25,7 +25,7 @@ foreach ($result_set as $row) {
     $item = array();
     if (isset($row["isbn"])) {
         $url = "https://www.googleapis.com/books/v1/volumes?q=isbn:" . $row["isbn"];
-        $apiKey = 'AIzaSyDqH65mzBQxl4Hlvakx6zebbylLnrpL7Sg';
+        $apiKey = ''; //deleted for security
         $url .= '&apiKey=' . $apiKey;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
