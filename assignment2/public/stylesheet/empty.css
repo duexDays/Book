@@ -1,0 +1,12 @@
+.empty {
+    align-items: center;
+    bottom: 1em;
+    color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+}

@@ -1,0 +1,431 @@
+/*
+name : Group7
+file name : search.css
+created date : 11-10-2024
+decription: css file for search.php
+*/
+#center-layout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#article-search-container{
+  margin:10px 0 20px 0;
+}
+
+#article-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-type {
+  display: grid;
+  grid-template-areas: "filter-title filter-author filter-category";
+}
+
+@media (max-width: 679px) {
+  .search-type {
+    grid-template-areas:
+      "filter-title"
+      "filter-author"
+      "filter-category";
+  }
+  .filter-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  .filter-author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+}
+.filter-title {
+  grid-area: filter-title;
+  padding-top: 10px;
+}
+.filter-author {
+  grid-area: filter-author;
+  padding-left: 40px;
+  padding-top: 10px;  
+}
+.filter-category {
+  grid-area: filter-category;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+/* Full-width input fields */
+.search-type input[type=text], 
+             select {
+    padding: 10px; 
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.search-type input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+.content-unit-container {
+  max-width: 800px;
+}
+
+.content-unit-container {
+  display: flex;
+  align-items: center;
+}
+
+.card-type-1 {
+  display: grid;
+  grid-template-areas: "image1 book-information";
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card-type-1 {
+    grid-template-areas:
+      "image1"
+      "book-information";
+  }
+
+  .image1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filter-author {
+    padding-left:0;
+  }
+
+  .filter-category {
+    padding-left:0;
+  }
+}
+
+.card-type-2 {
+  display: grid;
+  grid-template-areas:
+    "image1 book-information"
+    "image2 book-information";
+}
+
+@media (max-width: 768px) {
+  .card-type-2 {
+    grid-template-areas:
+      "image1"
+      "image2"
+      "book-information";
+  }
+}
+
+.image1 {
+  grid-area: image1;
+  padding-top: 40px;
+}
+
+.image2 {
+  grid-area: image2;
+  padding-top: 20px;
+}
+
+.content-unit-title {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 0 0 10px;
+  color: black;
+}
+
+.book-information {
+  grid-area: book-information;
+  padding: 40px;
+}
+
+.book-information li {
+  padding-top: 4px;
+  list-style-type: none;
+}
+
+.book-information .title {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #464646;
+  font-size: 11pt;
+}
+
+.book-information .author {
+  margin-bottom: 5px;
+  color: #808080;
+  font-size: 10pt;
+}
+
+.book-information .description {
+  margin-bottom: 5px;
+  color: #464646;
+  font-size: 10pt;
+}
+
+.form-popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 60px; /* Location of the box */
+  padding-left:25%;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.form-container {
+  border: 1px solid #888;
+  max-width: 500px;
+  max-height: 800px;
+  padding: 10px;
+  background-color: white;
+  font-size: 0.75em;
+}
+
+@media (max-width: 479px) {
+  .form-popup {
+    padding-left:0;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1023px) {
+  .form-popup {
+    padding-left:0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-popup {
+    padding-left:25%;
+  }
+}
+form .title {
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .05);
+  color: var(--color-black);
+  display: flex;
+  font-weight: 700;
+  padding: 15px;
+  text-align: left;
+  top: 0;
+  width: 100%;
+  word-break: keep-all;
+}
+
+form .information {
+  text-align: left;
+  color: var(--color-black);
+  display: flex;
+  margin-top: 3.5em;
+  font-size: 10px;
+}
+
+.information section:first-child {
+  padding-right: 50px;
+  text-align: center;
+}
+
+.information section:first-child p {
+  word-wrap: break-word;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.information section:last-child p:first-child {
+  font-weight: 700;
+}
+
+.information section:last-child #contents {
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.save-contents {
+  padding: 1em;
+  position: relative;
+}
+
+.option-button-container {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.option-button-container .active {
+  background-color: hotpink;
+  color: #fff;
+}
+
+.option-button-container button {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+  color: var(--color-black);
+  height: 50px;
+  margin-right: 10px;
+  width: 150px;
+}
+
+.selected-display {
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 10px;
+  text-align: left;
+}
+
+.selected-display p {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.option-container {
+  align-items: center;
+  border: 1px solid #e9e9e9;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 10px;
+  max-height: 100%;
+  min-height: 45px;
+  padding: 5px 15px;
+}
+
+form .option-container span {
+  color: var(--color-blue);
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.form-contatiner img {
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 2px 5px -1px rgba(50, 50, 93, .25), 0 1px 3px -1px rgba(0, 0, 0, .3);
+  min-width: 200px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password],
+.form-container textarea{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus,
+.form-container textarea:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+/* Add a yellow background color to the delete button */
+.form-container .delete {
+  background-color: orange;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.star-layout {
+  display:flex;
+  justify-content: center;
+}
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  justify-content: space-around;
+  text-align: center;
+  width: 5em;
+}
+ 
+.star-rating input {
+  display: none;
+}
+ 
+.star-rating label {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #708090;
+  cursor: pointer;
+}
+ 
+.star-rating :checked ~ label {
+  -webkit-text-fill-color: orange;
+}
+ 
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  -webkit-text-fill-color: orange;
+}

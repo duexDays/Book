@@ -1,0 +1,24 @@
+/*
+name : Group7
+file name : collection.css
+created date : 11-10-2024
+decription: css file for search.php
+*/
+#article-title-container {
+  background:    rgba(41, 126, 80, 0.5);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}
+#article-subtitle-container {
+  background:     #f1f1f1;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:hotpink;
+  font-weight:500;
+}

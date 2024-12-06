@@ -1,0 +1,591 @@
+/*
+name : Group7
+file name : style.css
+created date : 11-10-2024
+decription: css file for common
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", Verdana, "Poppins", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, sans-serif;
+}
+
+#todayHead {
+  height: 60px;
+}
+
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+  height: 60px;
+}
+
+.logo_service {
+  width: 120px;
+  background-position: 0px -80px;
+  background-size: 240px 160px;
+}
+
+.headButt-container {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 210px;
+  height: 60px;
+}
+
+main {
+  width: 100%;
+  top: 60px;
+  bottom: 35px;
+  position: absolute;
+  overflow-y: auto;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 0.75rem;
+  font-weight: normal;
+  padding-top: 5px;
+}
+
+@media (max-width: 479px) {
+
+  #summary-container h2,
+  #summary-container p {
+    font-size: 11pt;
+  }
+
+  #detail-container h2,
+  #detail-container p {
+    font-size: 10pt;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+  #summary-container h2,
+  #summary-container p {
+    font-size: 13pt;
+  }
+
+  #detail-container h2,
+  #detail-container p {
+    font-size: 12pt;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+  #summary-container h2,
+  #summary-container p {
+    font-size: 15pt;
+  }
+
+  #detail-container h2,
+  #detail-container p {
+    font-size: 14pt;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  #summary-container h2,
+  #summary-container p {
+    font-size: 15pt;
+  }
+
+  #detail-container h2,
+  #detail-container p {
+    font-size: 14pt;
+  }
+}
+
+#summary-container {
+  width: 100%;
+}
+
+#detail-container div {
+  max-width: 800px;
+  vertical-align: middle;
+}
+
+#detail-container div .loginForm {
+  margin: 20px 20px 10px 10px;
+  padding: 10px;
+  border-style: groove;
+  border-radius: 8px;
+  border-color: #d5dade;
+}
+
+#detail-container div .signupForm {
+  margin: 20px 20px 10px 10px;
+  padding: 10px;
+  border-style: groove;
+  border-radius: 8px;
+  border-color: #d5dade;
+  max-width: 500px;
+}
+
+#detail-container div h2,
+#detail-container div p,
+#detail-container div h1 {
+  padding-top: 10px;
+}
+
+.message-container {
+  padding: 5px;
+  text-align: center;
+}
+
+.input-container {
+  margin: 1.5em 0 1.0em 0;
+}
+
+.input-container label {
+  font-size: 0.75rem;
+}
+
+.input-box {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0px;
+  padding-bottom: 10px;
+  margin: 0px;
+  border: 0px;
+  vertical-align: top;
+  width: 100%;
+}
+
+.input-box input {
+  height: 2.5em;
+  max-height: 3em;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.button-container2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.notice {
+  font-size: 0.75rem;
+  color: #D4518A;
+  ;
+}
+
+.mainButt {
+  padding: .375rem 1rem;
+  display: inline-flex;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: rgb(253, 235, 236);
+  color: rgb(41, 126, 80);
+  cursor: pointer;
+  font-weight: 300;
+  border-color: rgba(41, 126, 80, 0.5);
+  border-style: solid;
+  border-radius: 15px;
+  min-width: 64px;
+  font-size: 10pt;
+  width: 100%;
+  justify-content: center;
+}
+
+.popButt {
+  padding: .375rem 1rem;
+  display: inline-flex;
+  align-self: center;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  color: #297e50;
+  cursor: pointer;
+  font-weight: 300;
+  border-color: rgba(41, 126, 80, 0.5);
+  border-style: solid;
+  border-radius: 15px;
+  min-width: 64px;
+  text-decoration: none;
+  font-size: 10pt;
+  width: 100%;
+  justify-content: center;
+}
+
+footer {
+  background: rgb(253, 235, 236);
+  flex: 1 0 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: rgb(55, 53, 47);
+  height: 35px;
+}
+
+footer>p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  font-size: 12px;
+}
+
+@media (max-width: 479px) {
+  #article-title-container p {
+    font-size: 20pt;
+  }
+
+  #menuToggle span {
+    display: block;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  #article-title-container p {
+    font-size: 22pt;
+  }
+
+  #menuToggle span {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  #article-title-container p {
+    font-size: 24pt;
+  }
+
+  #menuToggle span {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  #article-title-container p {
+    font-size: 24pt;
+  }
+
+  #menuToggle span {
+    display: none;
+  }
+}
+
+.detail-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.line {
+  background-color: rgba(0, 0, 0, 0.150000006);
+  height: 2px;
+  max-width: 800px;
+  margin-top: 8.5px;
+}
+
+/* index styling */ 
+
+.hero {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; /* 2 columns */ 
+  gap: 20px;
+  width: 100%; 
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*styling left column */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-evenly; 
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 84px;
+  height: 74px;
+  margin: 0 5px;
+  flex-shrink: 0;
+}
+
+.stat h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.stat p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+#start {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: #A4C6ED;
+  border: none; 
+  border-radius: 15px; /* rounded borders */
+  cursor: pointer;
+}
+
+#start:hover {
+  background-color: #225476;
+  transform: scale(1.05); /* enlarges the button on hover */
+}
+
+/* styling right column */
+.right-column { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%; 
+  height: auto;
+}
+
+/* media queries for the landing page/index.php */ 
+
+/* for smaller mobiles */ 
+@media (max-width: 479px) {
+
+  #todayHead {
+    height: 60px;
+    display: flex;
+    justify-content: space-between; /* distributing space between elements */
+    align-items: center; 
+    padding: 0 10px; /* added some padding to prevent elements from touching the edges */
+  }
+  
+  .f_l {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .f_r {
+    float: right; 
+    margin-left: 20px; 
+  }
+
+  .hero {
+   grid-template-columns: 1fr; /* single column */
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5em; /* adjust heading font size for smaller screens */
+  }
+
+  .hero-text p {
+    font-size: 1.2em; /* adjusts paragraph font size for smaller sreens */ 
+  }
+ 
+  .stat {
+    margin-bottom: 10px; 
+  }
+
+  .button-container {
+    margin-left: 0;
+  }
+
+  .hero-image img {
+    width: 100%; 
+    height: auto; 
+  }
+
+}
+
+/* for mobiles */ 
+@media (min-width: 480px) and (max-width: 767px) {
+
+  body {
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    box-sizing: border-box;
+  }
+
+  .hero {
+    grid-template-columns: 1fr; 
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7em; /* adjust heading font size for smaller screens */
+  }
+
+  .hero-text p {
+    font-size: 1.5em; /* adjusts paragraph font size for smaller sreens */ 
+  }
+ 
+  .stat {
+    margin-bottom: 10px; 
+  }
+
+  .button-container {
+    margin-left: 0;
+  }
+
+  .hero-image img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  header, footer {
+    width: 100%;
+  }
+}
+/* tablets */ 
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hero {
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+  }
+
+  .left-column, .right-column {
+    width: 100%; 
+  }
+
+  .hero-text h1 {
+    font-size: 2.2em; 
+  }
+
+  .hero-text p {
+    font-size: 1.5em; 
+  }
+
+  .hero-image img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .stats-container {
+    flex-direction: row; 
+    gap: 15px;
+  }
+
+  .stat {
+    width: 120px; 
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .button-container {
+    margin-left: 0;
+  }
+
+  header, footer {
+    width: 100%;
+  }
+
+/* for large desktops */ 
+@media (min-width: 1280px) {
+  .hero {
+    grid-template-columns: 1fr 1fr; /* 2 columns */ 
+    gap: 30px; /* added more gap */ 
+  }
+
+  .left-column, .right-column {
+    width: 50%; 
+  }
+
+  .hero-text h1 {
+    font-size: 3em; 
+  }
+
+  .hero-text p {
+    font-size: 1.7em; 
+  }
+
+  .hero-image img {
+    width: 100%; 
+    height: auto;
+    margin-top: 20px; 
+  }
+
+  .stats-container {
+    flex-direction: row; 
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .stat {
+    width: 150px; 
+    height: 100px;
+  }
+
+  .button-container {
+    margin-left: 0;
+  }
+}
+}

@@ -1,0 +1,87 @@
+section {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.book {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.book img {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.book-info {
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Book title */
+.book h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Book description */
+.book p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.book p strong {
+    font-weight: bold;
+}
+
+.images {
+    align-items: center;
+}
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.book-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main-rec, .main-discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.recommended-books, .discover-books {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
