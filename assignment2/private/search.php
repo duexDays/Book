@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['searchBook'])) {
             $url .= '+subject:' . $subject;
     }
 
-    $apiKey = 'AIzaSyDqH65mzBQxl4Hlvakx6zebbylLnrpL7Sg';
+    $apiKey = ''; //deleted
     $url .= '&key=' . $apiKey;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
